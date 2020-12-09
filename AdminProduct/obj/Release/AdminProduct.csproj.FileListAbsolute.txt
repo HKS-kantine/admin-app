@@ -1,0 +1,11 @@
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\bin\Release\AdminProduct.dll
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\bin\Release\AdminProduct.pdb
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\bin\Release\AdminEntities.dll
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\bin\Release\Newtonsoft.Json.dll
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\bin\Release\AdminEntities.pdb
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\bin\Release\Newtonsoft.Json.xml
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\obj\Release\AdminProduct.csprojAssemblyReference.cache
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\obj\Release\AdminProduct.csproj.CoreCompileInputs.cache
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\obj\Release\AdminProduct.csproj.CopyComplete
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\obj\Release\AdminProduct.dll
+C:\fontys\git\HKS-kantine\admin-app\AdminProduct\obj\Release\AdminProduct.pdb

@@ -1,0 +1,6 @@
+C:\fontys\git\HKS-kantine\admin-app\AdminEntities\bin\Release\AdminEntities.dll
+C:\fontys\git\HKS-kantine\admin-app\AdminEntities\bin\Release\AdminEntities.pdb
+C:\fontys\git\HKS-kantine\admin-app\AdminEntities\obj\Release\AdminEntities.csprojAssemblyReference.cache
+C:\fontys\git\HKS-kantine\admin-app\AdminEntities\obj\Release\AdminEntities.csproj.CoreCompileInputs.cache
+C:\fontys\git\HKS-kantine\admin-app\AdminEntities\obj\Release\AdminEntities.dll
+C:\fontys\git\HKS-kantine\admin-app\AdminEntities\obj\Release\AdminEntities.pdb
