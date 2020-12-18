@@ -15,5 +15,7 @@ namespace AdminEntities
     {
         Task<List<ProductDTO>> ReadAllAsync();
         Task<ProductDTO> ReadOneAsync(int id);
+        Task<ProductDTO> UpdateAsync(ProductDTO product);
+        Task<ProductDTO> CreateAsync(ProductDTO product);
     }
 }

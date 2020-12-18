@@ -20,7 +20,7 @@ export class AuthService {
     this.collectionCallService.get('api/auth').subscribe(login => {
       this.loginUser = login;
       this.loggedIn = true;
-      this.router.navigate(['/']);
+      this.router.navigate(['/dashboard']);
     }, error => {
       alert('Verkeerde gebruikersnaam of wachtwoord');
     });

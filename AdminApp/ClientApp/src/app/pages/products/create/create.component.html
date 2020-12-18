@@ -1,0 +1,37 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="card card-profile shadow h-100 col-12">
+
+      <div class="card-header">
+        <div class="row">
+          <div class="col-auto">
+            <h3 class="mb-0">Product</h3>
+            <button class="btn btn-sm float-right" [routerLink]="'/assortiment'">Annuleren</button>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-control-label" for="productName">Product naam</label>
+        <input type="text" class="form-control" id="productName" placeholder="Coca Cola" [(ngModel)]="product.name">
+      </div>
+
+      <div class="form-group">
+        <label class="form-control-label" for="productPrice">Product prijs</label>
+        <input type="number" class="form-control" id="productPrice" placeholder="1.80" [(ngModel)]="product.price">
+      </div>
+
+      <div class="form-group">
+        <label class="form-control-label" for="productImage">Product img URL</label>
+        <input type="url" class="form-control" id="productImage" placeholder="1.80" [(ngModel)]="product.image">
+      </div>
+
+      <button class="btn btn-primary mb-4" (click)="create()" [disabled]="creating">Opslaan</button>
+    </div>
+  </div>

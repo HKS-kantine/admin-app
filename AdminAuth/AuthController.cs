@@ -15,7 +15,7 @@ namespace AdminAuth
         private const string RequestUri = "https://localhost:44380/api/product";
         private static readonly HttpClient client = new HttpClient()
         {
-            BaseAddress = new Uri("https://localhost:44365")
+            BaseAddress = new Uri("https://431901-authentication-service.azurewebsites.net/")
         };
 
         public async Task<AuthDto> Login()

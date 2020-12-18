@@ -14,7 +14,7 @@ export const ROUTES: RouteInfo[] = [
 ];
 
 export const ADMINROUTES: RouteInfo[] = [
-  { path: '/dashboard', title: 'Assortiment',  icon: 'ni-tv-2', class: '' },
+  { path: '/assortiment', title: 'Assortiment',  icon: 'ni-tv-2', class: '' },
   { path: '/dashboard', title: 'Gebruikers',  icon: 'ni-circle-08', class: '' }
 
 ];

@@ -1,0 +1,57 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+  <div class="container-fluid">
+    <div class="header-body">
+
+    </div>
+  </div>
+</div>
+<div class="container-fluid mt--7">
+  <div class="row">
+    <div class="card card-profile shadow h-100 col-12">
+
+      <div class="card-header">
+        <div class="row">
+          <div class="col-auto">
+            <h3 class="mb-0">Turven</h3>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-sm btn-outline-primary" routerLink="aanmaken">Nieuwe product aanmaken</button>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table align-items-center ">
+          <thead class="thead-light">
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Prijs</th>
+            <th scope="col">Beheer</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let product of products">
+            <th scope="row">
+              <div class="media align-items-center">
+                <a href="javascript:void(0)" class="avatar rounded-circle">
+                  <img alt="Image placeholder" [src]="product.image">
+                </a>
+                <div class="ml-3 media-body d-none d-lg-block">
+                  <span class="mb-0 text-sm">{{product.name}}</span>
+                </div>
+              </div>
+            </th>
+            <td>
+              {{product.price | currency:"EUR"}}
+            </td>
+            <td>
+              <div class="btn-group">
+                <button class="btn btn-sm btn-warning" [routerLink]="[product.id, 'aanpassen']">edit</button>
+                <button class="btn btn-sm btn-danger">delete</button>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+  </div>
+</div>

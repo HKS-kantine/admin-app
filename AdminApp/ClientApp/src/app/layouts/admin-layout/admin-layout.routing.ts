@@ -5,5 +5,6 @@ import { UserProfileComponent } from '../../pages/user-profile/user-profile.comp
 
 export const AdminLayoutRoutes: Routes = [
     { path: 'dashboard',      component: DashboardComponent },
-    { path: 'profiel',   component: UserProfileComponent }
+    { path: 'profiel',   component: UserProfileComponent },
+    { path: 'assortiment', loadChildren: '../../pages/products/products.module#ProductsModule'}
 ];

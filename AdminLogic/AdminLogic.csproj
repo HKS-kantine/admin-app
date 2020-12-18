@@ -54,7 +54,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Auth.cs" />
+    <Compile Include="Entities\ProductEntity.cs" />
     <Compile Include="Entities\UserEntity.cs" />
+    <Compile Include="Products.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

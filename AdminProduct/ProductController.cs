@@ -42,5 +42,21 @@ namespace AdminProduct
             string result = response.Content.ReadAsStringAsync().Result;
             return JsonConvert.DeserializeObject<ProductDTO>(result);
         }
+
+        public async Task<ProductDTO> UpdateAsync(ProductDTO product)
+        {
+            HttpResponseMessage response = await client.PutAsync("/api/product", new StringContent(JsonConvert.SerializeObject(product), Encoding.UTF8, "application/json"));
+            response.EnsureSuccessStatusCode();
+            string result = response.Content.ReadAsStringAsync().Result;
+            return JsonConvert.DeserializeObject<ProductDTO>(result);
+        }
+
+        public async Task<ProductDTO> CreateAsync(ProductDTO product)
+        {
+            HttpResponseMessage response = await client.PostAsync("/api/product", new StringContent(JsonConvert.SerializeObject(product), Encoding.UTF8, "application/json"));
+            response.EnsureSuccessStatusCode();
+            string result = response.Content.ReadAsStringAsync().Result;
+            return JsonConvert.DeserializeObject<ProductDTO>(result);
+        }
     }
 }

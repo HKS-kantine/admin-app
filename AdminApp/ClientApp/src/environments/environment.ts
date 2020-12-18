@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  collectionURL: 'https://localhost:44322/'
+  collectionURL: ''
 };
 
 /*
