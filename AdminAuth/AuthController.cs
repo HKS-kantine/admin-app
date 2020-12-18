@@ -18,13 +18,13 @@ namespace AdminAuth
             BaseAddress = new Uri("https://431901-authentication-service.azurewebsites.net/")
         };
 
-        public async Task<AuthDto> Login()
+        public async Task<AuthDto> Login(string User, string Password)
         {
             //client.DefaultRequestHeaders.Accept.Clear();
             //client.DefaultRequestHeaders.Accept.Add(
             //    new MediaTypeWithQualityHeaderValue("application/json")
             //);
-            HttpResponseMessage response = await client.PostAsync("/api/user", new StringContent(JsonConvert.SerializeObject(new { Username = "maarten.jakobs@gmail.com", Password = "sonu@123" }),
+            HttpResponseMessage response = await client.PostAsync("/api/user", new StringContent(JsonConvert.SerializeObject(new { Username = User, Password = Password }),
                 Encoding.UTF8, "application/json"));
 
             response.EnsureSuccessStatusCode();

@@ -7,6 +7,11 @@ import {AuthService} from '../../../services/auth/auth.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit, OnDestroy {
+
+
+  user: string;
+  password: string;
+
   constructor(
     private authService: AuthService
   ) {}
@@ -17,7 +22,7 @@ export class LoginComponent implements OnInit, OnDestroy {
   }
 
   login() {
-    this.authService.logIn();
+    this.authService.logIn(this.user, this.password);
   }
 
 }

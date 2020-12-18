@@ -16,8 +16,8 @@ export class AuthService {
     private router: Router
   ) { }
 
-  logIn() {
-    this.collectionCallService.get('api/auth').subscribe(login => {
+  logIn(user, password) {
+    this.collectionCallService.post('api/auth', {Username: user, Password: password}).subscribe(login => {
       this.loginUser = login;
       this.loggedIn = true;
       this.router.navigate(['/dashboard']);

@@ -18,7 +18,8 @@ namespace AdminApp.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            UserEntity user = cont.Login();
+            LoginEntity login = new LoginEntity(){Username = "maarten.jakobs@gmail.com", Password = "sonu@123" };
+            UserEntity user = cont.Login(login);
             if (user != null)
             {
                 //await notificationController.GetAsync("user", user.Id);
@@ -26,6 +27,19 @@ namespace AdminApp.Controllers
             }
 
             return Unauthorized(new {message = "Username or password is incorrect"});
+        }
+
+        [HttpPost]
+        public IActionResult Authenticate([FromBody] LoginEntity loginParam)
+        {
+            UserEntity user = cont.Login(loginParam);
+            if (user != null)
+            {
+                //await notificationController.GetAsync("user", user.Id);
+                return Ok(user);
+            }
+
+            return Unauthorized(new { message = "Username or password is incorrect" });
         }
     }
 }

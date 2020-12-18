@@ -14,6 +14,6 @@ namespace AdminEntities
     }
     public interface IAuth
     {
-        Task<AuthDto> Login();
+        Task<AuthDto> Login(string User, string Password);
     }
 }

@@ -16,11 +16,11 @@ namespace AdminLogic
         private static AuthDto auth;
 
         private bool _loggedIn = false;
-        public UserEntity Login()
+        public UserEntity Login(LoginEntity loginParam)
         {
-            if (_AuthDal.Login().Result != null)
+            if (_AuthDal.Login(loginParam.Username, loginParam.Password).Result != null)
             {
-                auth = _AuthDal.Login().Result;
+                auth = _AuthDal.Login(loginParam.Username, loginParam.Password).Result;
                 return new UserEntity().UserDTOToUser(GetLoggedInUser());
             }
             return null;
