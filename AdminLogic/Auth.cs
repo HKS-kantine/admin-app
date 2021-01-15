@@ -15,7 +15,7 @@ namespace AdminLogic
         private readonly IAuth _AuthDal = AuthFactory.GetAuth();
         private static AuthDto auth;
 
-        private bool _loggedIn = false;
+        private readonly bool _loggedIn = false;
         public UserEntity Login(LoginEntity loginParam)
         {
             if (_AuthDal.Login(loginParam.Username, loginParam.Password).Result != null)

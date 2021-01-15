@@ -1,0 +1,245 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\IntegrationTests\\IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminApp\\AdminApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminApp\\AdminApp.csproj",
+        "projectName": "AdminApp",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminApp\\AdminApp.csproj",
+        "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+        "outputPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminApp\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminLogic\\AdminLogic.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminLogic\\AdminLogic.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.SpaServices.Extensions": {
+              "target": "Package",
+              "version": "[3.1.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminAuth\\AdminAuth.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminAuth\\AdminAuth.csproj",
+        "projectName": "AdminAuth",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminAuth\\AdminAuth.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj",
+        "projectName": "AdminEntities",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminFactory\\AdminFactory.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminFactory\\AdminFactory.csproj",
+        "projectName": "AdminFactory",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminFactory\\AdminFactory.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminAuth\\AdminAuth.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminAuth\\AdminAuth.csproj"
+              },
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj"
+              },
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminProduct\\AdminProduct.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminProduct\\AdminProduct.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminLogic\\AdminLogic.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminLogic\\AdminLogic.csproj",
+        "projectName": "AdminLogic",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminLogic\\AdminLogic.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj"
+              },
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminFactory\\AdminFactory.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminFactory\\AdminFactory.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminProduct\\AdminProduct.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminProduct\\AdminProduct.csproj",
+        "projectName": "AdminProduct",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminProduct\\AdminProduct.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminEntities\\AdminEntities.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\fontys\\git\\HKS-kantine\\admin-app\\IntegrationTests\\IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\fontys\\git\\HKS-kantine\\admin-app\\IntegrationTests\\IntegrationTests.csproj",
+        "projectName": "IntegrationTests",
+        "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\IntegrationTests\\IntegrationTests.csproj",
+        "packagesPath": "C:\\Users\\maart\\.nuget\\packages\\",
+        "outputPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\IntegrationTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\maart\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminApp\\AdminApp.csproj": {
+                "projectPath": "C:\\fontys\\git\\HKS-kantine\\admin-app\\AdminApp\\AdminApp.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.4.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[3.15.1, )"
+            },
+            "nunit": {
+              "target": "Package",
+              "version": "[3.12.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

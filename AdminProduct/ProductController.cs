@@ -14,7 +14,7 @@ namespace AdminProduct
         private const string RequestUri = "https://localhost:44380/api/product";
         private static readonly HttpClient client = new HttpClient()
         {
-            BaseAddress = new Uri("https://localhost:44380")
+            BaseAddress = new Uri("https://kantine-product-service.azurewebsites.net")
         };
 
         public async Task<List<ProductDTO>> ReadAllAsync()
